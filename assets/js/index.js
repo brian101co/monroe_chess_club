@@ -7,8 +7,17 @@ document.addEventListener('DOMContentLoaded', function () {
     var year = new Date().getFullYear();
     var sidenav = M.Sidenav.init(navElems);
 
-    M.Collapsible.init(FAQelems);
     M.Carousel.init(carouselElems);
+    M.Collapsible.init(FAQelems, {
+      onOpenStart: function (listElem) {
+        listElem.querySelector(".caret").innerHTML =
+          '<img src="assets/images/caret-down.svg" alt="Tab Open Icon">';
+      },
+      onCloseStart: function (listElem) {
+        listElem.querySelector(".caret").innerHTML =
+          '<img src="assets/images/caret-right.svg" alt="Tab Closed Icon">';
+      },
+    });
 
     for (var child of navElems.children) {
         child.addEventListener("click", function(){
