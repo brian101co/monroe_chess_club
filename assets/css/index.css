@@ -23,13 +23,15 @@ html {
     margin-bottom: 0;
 }
 
-.hero h1 {
+.hero-title {
     margin: 0;
+    font-size: 5rem;
 }
 
-.hero .subtitle {
+.hero-subtitle {
     width: 80%;
     text-align: center;
+    font-size: 1.7rem;
 }
 
 p {
@@ -115,13 +117,15 @@ footer {
         font-size: 1.5rem;
     }
 
-    .hero h1 {
+    .hero-title {
         font-size: 3rem;
     }
 
-    .hero p {
+    .hero-subtitle {
         text-align: center;
         padding: 0 2rem;
+        font-size: 1.3rem;
+        width: 100%;
     }
 
     h2 {
