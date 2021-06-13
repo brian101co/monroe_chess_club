@@ -10,12 +10,10 @@ document.addEventListener('DOMContentLoaded', function () {
     M.Carousel.init(carouselElems);
     M.Collapsible.init(FAQelems, {
       onOpenStart: function (listElem) {
-        listElem.querySelector(".caret").innerHTML =
-          '<img src="assets/images/caret-down.svg" alt="Tab Open Icon">';
+        listElem.querySelector(".caret").classList.toggle("open");
       },
       onCloseStart: function (listElem) {
-        listElem.querySelector(".caret").innerHTML =
-          '<img src="assets/images/caret-right.svg" alt="Tab Closed Icon">';
+        listElem.querySelector(".caret").classList.toggle("open");
       },
     });
 

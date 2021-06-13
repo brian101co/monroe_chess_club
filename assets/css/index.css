@@ -108,8 +108,20 @@ footer {
     right: 30px;
 }
 
+.collapsible-header {
+    align-items: center;
+}
+
 .caret {
-    padding-right: 1rem;
+    display: flex;
+    align-items: center;
+    padding: 0 0.5rem;
+    transition: transform 300ms;
+}
+
+.caret.open {
+    transform: rotate(90deg);
+    transform-origin: center center;
 }
 
 @media screen and (max-width: 500px) {
