@@ -3,7 +3,7 @@ html {
 }
 
 .nav-wrapper {
-    padding: 0 2rem;
+    padding: 0 5rem;
 }
 
 .hero {
@@ -155,5 +155,9 @@ footer {
 @media screen and (max-width: 400px) {
     nav .brand-logo {
         font-size: 1.2rem;
+    }
+
+    .nav-wrapper {
+        padding: 0 2rem;
     }
 }
